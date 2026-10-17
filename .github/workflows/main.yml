@@ -1,0 +1,13 @@
+name: Schedule Job
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  run-script:
+    runs-on: redhat
+
+    steps:
+      - name: print messages
+        run: echo "schedule workflow execute"
+       
